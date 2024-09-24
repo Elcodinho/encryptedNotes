@@ -1,0 +1,13 @@
+# Node.js modules
+backend_project/node_modules
+react_project/node_modules
+
+# Logs
+*.log
+
+# Build
+react_project/build
+react_project/build
+
+# Environment variables
+*.env

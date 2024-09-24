@@ -1,0 +1,16 @@
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav__item {
+  color: rgb(179, 176, 176);
+  transition: all 0.2s linear;
+}
+
+.nav__item:hover {
+  color: white;
+  transform: scale(105%);
+}

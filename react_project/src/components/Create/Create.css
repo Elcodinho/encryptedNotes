@@ -1,0 +1,12 @@
+.form__text {
+  width: 100%;
+  min-height: 150px;
+  max-height: 300px;
+  resize: vertical;
+  cursor: text;
+}
+
+.note-info {
+  margin-bottom: 20px;
+  font-size: 14px;
+}

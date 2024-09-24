@@ -1,0 +1,23 @@
+.button-container {
+  align-self: flex-end;
+}
+
+.send-button {
+  padding: 10px 20px;
+
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+  background-color: rgb(66, 66, 227);
+  border-radius: 5px;
+  color: white;
+
+  transition: all 0.2s linear;
+}
+
+.send-button:hover,
+.send-button:active {
+  transform: scale(105%);
+  background-color: rgb(12, 12, 187);
+}

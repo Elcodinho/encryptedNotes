@@ -1,0 +1,9 @@
+.copy-notification {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgba(211, 211, 211, 0.9);
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  transition: opacity 0.3s linear;
+}

@@ -1,0 +1,10 @@
+.footer {
+  background-color: rgb(45, 45, 45);
+  width: 100%;
+}
+
+.footer__wrapper {
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+}
