@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { URLBACK, URL } from "../../constants/constants";
 import { sendData } from "../../utils/sendData";
 import { ShowUrl } from "./ShowUrl/ShowUrl";
@@ -9,6 +9,19 @@ export function Create() {
   const [value, setValue] = useState("");
   const [url, setUrl] = useState("");
   const [fetchError, setFetchError] = useState(null);
+
+  // Получаем данные из LocalStorage и после монтирования компонента вставляем их в текстовое поле
+  useEffect(() => {
+    const savedNote = JSON.parse(localStorage.getItem("note"));
+    if (savedNote) {
+      setValue(savedNote);
+    }
+  }, []);
+
+  // Добавляем данные в LocalStorage при изменении value в textArea
+  useEffect(() => {
+    localStorage.setItem("note", JSON.stringify(value));
+  }, [value]);
 
   function handleSubmit(e) {
     e.preventDefault();

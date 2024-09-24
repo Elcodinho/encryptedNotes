@@ -1,0 +1,27 @@
+.error__wrapper {
+  max-width: 800px;
+  margin: 70px auto 0;
+}
+
+.error__title {
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+  color: red;
+}
+
+.error__link {
+  display: block;
+
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  color: blue;
+
+  transition: transform 0.2s linear;
+}
+
+.error__link:hover {
+  transform: scale(105%) translateY(-5px);
+}
